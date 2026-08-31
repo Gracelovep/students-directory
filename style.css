@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fdf6fb;
+  color: #2e2233;
+}
+
+header {
+  background-color: #7b2d8e;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0.15rem 0;
+}
+
+#student-count {
+  font-weight: bold;
+  margin-top: 0.75rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-card {
+  background-color: #ffffff;
+  border: 1px solid #eadcf0;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(123, 45, 142, 0.08);
+  transition: transform 0.15s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+}
+
+.student-card h2 {
+  margin: 0 0 0.5rem;
+  color: #7b2d8e;
+  font-size: 1.2rem;
+}
+
+.student-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.student-card .bio {
+  margin-top: 0.6rem;
+  font-style: italic;
+  color: #5c4a63;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #7b2d8e;
+  font-size: 0.9rem;
+}
